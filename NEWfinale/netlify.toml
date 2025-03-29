@@ -1,0 +1,12 @@
+[build]
+  functions = "functions"
+  publish = "public"
+
+[dev]
+  functions = "functions"
+  framework = "#static"
+  
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200 

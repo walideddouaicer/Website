@@ -1,0 +1,25 @@
+{
+  "name": "webwacos",
+  "version": "1.0.0",
+  "description": "Professional web development and design services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "netlify dev"
+  },
+  "keywords": [
+    "web",
+    "development",
+    "design",
+    "responsive",
+    "e-commerce"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "netlify-cli": "^16.9.3",
+    "nodemailer": "^6.9.7"
+  }
+} 

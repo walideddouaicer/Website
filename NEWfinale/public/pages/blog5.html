@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Responsive Design in 2025: Beyond Media Queries | WebWacos</title>
+    <meta name="title" content="Responsive Design in 2025: Beyond Media Queries">
+    <meta name="description" content="Explore modern responsive design techniques that go beyond traditional media queries. Learn about container queries, viewport units, and adaptive layouts.">
+    <meta name="keywords" content="responsive design, container queries, viewport units, adaptive layouts, web development, mobile-first">
+    <meta name="author" content="Sarah Johnson">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://webwacos.com/blog/responsive-design-2025">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://webwacos.com/blog/responsive-design-2025">
+    <meta property="og:title" content="Responsive Design in 2025: Beyond Media Queries">
+    <meta property="og:description" content="Explore modern responsive design techniques that go beyond traditional media queries. Learn about container queries, viewport units, and adaptive layouts.">
+    <meta property="og:image" content="https://webwacos.com/images/blog/responsive-design-2025.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://webwacos.com/blog/responsive-design-2025">
+    <meta property="twitter:title" content="Responsive Design in 2025: Beyond Media Queries">
+    <meta property="twitter:description" content="Explore modern responsive design techniques that go beyond traditional media queries. Learn about container queries, viewport units, and adaptive layouts.">
+    <meta property="twitter:image" content="https://webwacos.com/images/blog/responsive-design-2025.jpg">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blogstyle.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Web<span>Wacos</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="services-detail.html">Services Detail</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-single-hero">
+        <div class="blog-breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>Responsive Design in 2025</li>
+            </ul>
+        </div>
+        <h1>Responsive Design in 2025: Beyond Media Queries</h1>
+        <div class="post-meta">
+            <div class="meta-item">
+                <i class="far fa-calendar"></i>
+                <span>February 12, 2025</span>
+            </div>
+            <div class="meta-item">
+                <i class="far fa-user"></i>
+                <span>By <a href="#">Sarah Johnson</a></span>
+            </div>
+            <div class="meta-item">
+                <i class="far fa-folder"></i>
+                <span><a href="#">Design</a>, <a href="#">Development</a></span>
+            </div>
+            <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>8 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Image -->
+    <div class="blog-featured-image">
+        <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=2000&auto=format&fit=crop" alt="Responsive Design in 2025" class="featured-img">
+    </div>
+
+    <!-- Blog Content Section -->
+    <section class="blog-content-section">
+        <div class="blog-layout">
+            <main class="blog-main-content">
+                <p class="blog-intro">
+                    Responsive web design has come a long way since Ethan Marcotte first coined the term in 2010. As we move further into 2025, we're seeing a paradigm shift in how we approach responsive design. Traditional media queries are no longer enough in a world of diverse devices, from foldable phones to ultra-wide monitors and everything in between. This article explores cutting-edge techniques that are reshaping responsive design in 2025.
+                </p>
+
+                <div class="blog-toc">
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#limitations">Limitations of Traditional Media Queries</a></li>
+                        <li><a href="#container-queries">Container Queries: Context-Aware Components</a></li>
+                        <li><a href="#viewport-units">Advanced Viewport Units</a></li>
+                        <li><a href="#fluid-typography">Fluid Typography and Spacing</a></li>
+                        <li><a href="#adaptive-layouts">Adaptive Layouts with CSS Grid and Flexbox</a></li>
+                        <li><a href="#future">The Future: AI-Driven Responsive Design</a></li>
+                    </ul>
+                </div>
+
+                <div id="limitations" class="blog-section">
+                    <h2>Limitations of Traditional Media Queries</h2>
+                    <p>
+                        For over a decade, media queries served as the backbone of responsive design. They allowed us to create breakpoints based on viewport dimensions, but they came with significant limitations:
+                    </p>
+                    <ul class="styled-list">
+                        <li>They only consider the viewport size, not the actual component's context</li>
+                        <li>Require redundant code for similar components in different contexts</li>
+                        <li>Can't respond to changes in parent container dimensions</li>
+                        <li>Create complex, hard-to-maintain stylesheets as projects grow</li>
+                    </ul>
+                    <p>
+                        In 2025, with increasingly complex web applications and diverse device ecosystems, these limitations have pushed developers toward more context-aware solutions.
+                    </p>
+                    
+                    <div class="quote-box">
+                        <blockquote>
+                            "Media queries were revolutionary, but they were designed for a simpler web. Today's components need to be truly adaptive to their immediate surroundings, not just the device viewport."
+                            <cite>— Rachel Andrew, Web Standards Advocate</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div id="container-queries" class="blog-section">
+                    <h2>Container Queries: Context-Aware Components</h2>
+                    <p>
+                        Container queries allow components to adapt based on their parent container's size rather than the viewport size. This approach enables truly reusable, context-aware components that maintain their integrity regardless of where they're placed in a layout.
+                    </p>
+
+                    <h3>How Container Queries Work</h3>
+                    <p>
+                        Unlike media queries that look at the viewport, container queries observe the size of a component's parent container. This fundamentally changes how we think about responsive design, shifting from a page-level approach to a component-level one.
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>CSS</span>
+                        </div>
+                        <pre><code>/* Define containment context */
+.card-container {
+  container-type: inline-size;
+  container-name: card;
+}
+
+/* Style card based on container width */
+@container card (min-width: 400px) {
+  .card {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-image {
+    width: 30%;
+  }
+  
+  .card-content {
+    width: 70%;
+    padding-left: 1rem;
+  }
+}
+
+@container card (max-width: 399px) {
+  .card {
+    flex-direction: column;
+  }
+  
+  .card-image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content {
+    width: 100%;
+  }
+}</code></pre>
+                    </div>
+
+                    <p>
+                        By 2025, container queries have become a standard feature in all modern browsers, transforming how we build component libraries and design systems. Components can now be truly independent, adapting intelligently to their surroundings without external styling overrides.
+                    </p>
+
+                    <div class="image-comparison">
+                        <div class="comparison-wrapper">
+                            <div class="comparison-item">
+                                <h4>Traditional Media Queries</h4>
+                                <img src="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=600&auto=format&fit=crop" alt="Traditional Media Queries Example">
+                            </div>
+                            <div class="comparison-item">
+                                <h4>Container Queries</h4>
+                                <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=600&auto=format&fit=crop" alt="Container Queries Example">
+                            </div>
+                        </div>
+                        <p class="caption">Comparison of the same card component using traditional media queries vs. container queries</p>
+                    </div>
+                </div>
+
+                <div id="viewport-units" class="blog-section">
+                    <h2>Advanced Viewport Units</h2>
+                    <p>
+                        In 2025, we've moved beyond the basic <code>vh</code> and <code>vw</code> units to embrace more nuanced viewport units that solve long-standing responsive design challenges.
+                    </p>
+
+                    <h3>Dynamic Viewport Units</h3>
+                    <p>
+                        The new generation of viewport units includes small (<code>sv*</code>), large (<code>lv*</code>), and dynamic (<code>dv*</code>) variants that account for dynamic viewport changes like mobile browser address bars and on-screen keyboards.
+                    </p>
+
+                    <div class="content-box primary">
+                        <h4>New Viewport Units in 2025</h4>
+                        <ul>
+                            <li><strong>svh, svw, svi</strong> - Small viewport height/width/inline (smallest possible viewport)</li>
+                            <li><strong>lvh, lvw, lvi</strong> - Large viewport height/width/inline (largest possible viewport)</li>
+                            <li><strong>dvh, dvw, dvi</strong> - Dynamic viewport height/width/inline (adapts as the viewport changes)</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        These units have solved the infamous "100vh problem" on mobile devices where content would get cut off by browser chrome. The dynamic viewport units (<code>dvh</code>) are particularly useful as they automatically adjust as the browser UI elements appear and disappear.
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>CSS</span>
+                        </div>
+                        <pre><code>/* Hero section that works perfectly on all devices */
+.hero {
+  height: 100dvh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content area that adjusts to visible viewport */
+.content {
+  max-height: 80dvh;
+  overflow-y: auto;
+}</code></pre>
+                    </div>
+                </div>
+
+                <div id="fluid-typography" class="blog-section">
+                    <h2>Fluid Typography and Spacing</h2>
+                    <p>
+                        Static font sizes and spacing have given way to fully fluid approaches that scale smoothly between viewport sizes, eliminating the need for breakpoint-based typography adjustments.
+                    </p>
+
+                    <h3>Clamp() and Fluid Typography</h3>
+                    <p>
+                        The <code>clamp()</code> function has revolutionized responsive typography by allowing us to define minimum, preferred, and maximum values in a single declaration.
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>CSS</span>
+                        </div>
+                        <pre><code>/* Fluid heading that scales from 1.5rem to 3.5rem */
+h1 {
+  font-size: clamp(1.5rem, 3vw + 1rem, 3.5rem);
+  line-height: 1.2;
+}
+
+/* Fluid paragraph text */
+p {
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem);
+  line-height: 1.6;
+}
+
+/* Fluid spacing */
+.section {
+  padding: clamp(2rem, 5vw, 5rem);
+  margin-bottom: clamp(3rem, 8vw, 8rem);
+}</code></pre>
+                    </div>
+
+                    <p>
+                        This approach creates typography that responds smoothly to viewport changes without abrupt shifts at breakpoints, enhancing readability across all device sizes.
+                    </p>
+
+                    <h3>Custom Properties for Fluid Design Systems</h3>
+                    <p>
+                        Modern design systems now use CSS custom properties with fluid values to create comprehensive spacing and typography scales that adjust proportionally across viewports.
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>CSS</span>
+                        </div>
+                        <pre><code>:root {
+  --fluid-min-width: 320px;
+  --fluid-max-width: 1440px;
+  
+  --fluid-screen: 100vw;
+  --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width)) / 
+                     (var(--fluid-max-width) - var(--fluid-min-width)));
+  
+  /* Fluid spacing scale */
+  --space-1: calc(0.5rem + 0.5rem * var(--fluid-bp));
+  --space-2: calc(1rem + 1rem * var(--fluid-bp));
+  --space-3: calc(1.5rem + 1.5rem * var(--fluid-bp));
+  --space-4: calc(2rem + 2rem * var(--fluid-bp));
+  --space-5: calc(3rem + 3rem * var(--fluid-bp));
+  
+  /* Fluid type scale */
+  --step--1: calc(0.75rem + 0.2rem * var(--fluid-bp));
+  --step-0: calc(1rem + 0.25rem * var(--fluid-bp));
+  --step-1: calc(1.25rem + 0.5rem * var(--fluid-bp));
+  --step-2: calc(1.5rem + 1rem * var(--fluid-bp));
+  --step-3: calc(2rem + 1.5rem * var(--fluid-bp));
+  --step-4: calc(2.5rem + 2rem * var(--fluid-bp));
+  --step-5: calc(3rem + 2.5rem * var(--fluid-bp));
+}</code></pre>
+                    </div>
+                </div>
+
+                <div id="adaptive-layouts" class="blog-section">
+                    <h2>Adaptive Layouts with CSS Grid and Flexbox</h2>
+                    <p>
+                        Modern layouts have evolved beyond simple column-based structures to fully adaptive designs that respond to both viewport and content needs.
+                    </p>
+
+                    <h3>Auto-Fit and Auto-Fill</h3>
+                    <p>
+                        The <code>repeat(auto-fit, minmax())</code> and <code>repeat(auto-fill, minmax())</code> patterns have become foundational for creating responsive grid layouts that adapt to available space without media queries.
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>CSS</span>
+                        </div>
+                        <pre><code>/* Grid that automatically adjusts columns based on available space */
+.adaptive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+}</code></pre>
+                    </div>
+
+                    <h3>Content-Based Sizing</h3>
+                    <p>
+                        The <code>fit-content()</code>, <code>min-content</code>, and <code>max-content</code> sizing properties allow layouts to adapt to their content, creating more natural and readable designs.
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>CSS</span>
+                        </div>
+                        <pre><code>/* Sidebar that adapts to its content */
+.sidebar {
+  width: fit-content(30%);
+  min-width: min-content;
+  max-width: 350px;
+}
+
+/* Multi-column layout that adapts to content */
+.flexible-layout {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) fit-content(45ch) minmax(min-content, 1fr);
+  gap: var(--space-4);
+}</code></pre>
+                    </div>
+
+                    <h3>Subgrid</h3>
+                    <p>
+                        With full browser support for subgrid in 2025, we can now create complex nested grids where child elements align perfectly with the parent grid, simplifying layout code and enhancing component alignment.
+                    </p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>CSS</span>
+                        </div>
+                        <pre><code>.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.card-container {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.card-header {
+  grid-column: span 4;
+}
+
+.card-content {
+  grid-column: span 4;
+}
+
+.card-footer {
+  grid-column: span 4;
+}</code></pre>
+                    </div>
+                </div>
+
+                <div id="future" class="blog-section">
+                    <h2>The Future: AI-Driven Responsive Design</h2>
+                    <p>
+                        As we look beyond 2025, AI is beginning to transform responsive design through predictive layouts and user-specific adaptations.
+                    </p>
+
+                    <h3>Predictive Responsiveness</h3>
+                    <p>
+                        AI-powered frameworks now analyze user behavior and device capabilities to predict optimal layouts before the page even loads, reducing layout shifts and improving perceived performance.
+                    </p>
+
+                    <h3>Personalized Layouts</h3>
+                    <p>
+                        Advanced systems are beginning to adapt layouts based on individual user preferences, accessibility needs, and usage patterns, creating truly personalized experiences beyond traditional responsive design.
+                    </p>
+
+                    <div class="content-box light">
+                        <h4>Emerging AI Responsive Techniques</h4>
+                        <ul>
+                            <li><strong>Context-aware content prioritization</strong> - Reordering content based on user goals</li>
+                            <li><strong>Behavioral responsiveness</strong> - Adapting to how users interact with the interface</li>
+                            <li><strong>Predictive loading</strong> - Preloading components likely to be needed based on user patterns</li>
+                            <li><strong>Automatic responsive image generation</strong> - Creating optimized image variations in real-time</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <h3>Conclusion: Component-First Responsive Design</h3>
+                    <p>
+                        As we navigate through 2025, responsive design has evolved from a viewport-centric approach to a component-first methodology. Container queries, advanced viewport units, fluid typography, and AI-enhanced layouts have transformed how we build adaptable websites.
+                    </p>
+                    <p>
+                        This shift empowers developers to create truly responsive components that work flawlessly in any context, reducing complexity while expanding capability. The result is more maintainable codebases and superior user experiences across the ever-expanding device ecosystem.
+                    </p>
+                    <p>
+                        The future of responsive design focuses not just on adapting to screen sizes, but on adapting to user needs, content requirements, and component contexts—creating websites that are responsive in the truest sense of the word.
+                    </p>
+                </div>
+
+                <!-- Author Bio -->
+                <div class="author-bio">
+                    <div class="author-image">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&auto=format&fit=crop" alt="Sarah Johnson">
+                    </div>
+                    <div class="author-details">
+                        <h3>WRITTEN BY</h3>
+                        <h4>Sarah Johnson</h4>
+                        <p>Sarah is a senior front-end developer at WebWacos with over 10 years of experience in responsive design and web development. She specializes in creating accessible, performant user interfaces and frequently speaks at web development conferences.</p>
+                        <div class="author-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Actions -->
+                <div class="article-actions">
+                    <div class="share-post">
+                        <h4>Share This Post</h4>
+                        <div class="share-buttons">
+                            <a href="#" class="share-button facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" class="share-button twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#" class="share-button linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="post-tags">
+                        <h4>Related Topics</h4>
+                        <div class="tags">
+                            <a href="#" class="tag">Responsive Design</a>
+                            <a href="#" class="tag">CSS</a>
+                            <a href="#" class="tag">Container Queries</a>
+                            <a href="#" class="tag">Frontend Development</a>
+                            <a href="#" class="tag">Web Design</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Blog Sidebar -->
+            <aside class="blog-sidebar">
+                <!-- Author Widget -->
+                <div class="sidebar-widget author-widget">
+                    <div class="author-image">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&auto=format&fit=crop" alt="Sarah Johnson">
+                    </div>
+                    <h3>Sarah Johnson</h3>
+                    <p>Senior Frontend Developer at WebWacos. Passionate about creating accessible, responsive web experiences.</p>
+                    <div class="author-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Search Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Search</h3>
+                    <form action="#" method="get">
+                        <input type="text" name="s" placeholder="Search articles..." class="form-control">
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 0.5rem;">Search</button>
+                    </form>
+                </div>
+
+                <!-- Recent Posts Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <ul class="recent-posts">
+                        <li>
+                            <a href="#">The Rise of WebAssembly: Beyond JavaScript in 2025</a>
+                            <span class="post-date">March 5, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#">Building Accessible Web Applications: A Comprehensive Guide</a>
+                            <span class="post-date">February 28, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#">Core Web Vitals: The 2025 Update</a>
+                            <span class="post-date">February 20, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#">AI-Powered Design Systems: Automating Frontend Development</a>
+                            <span class="post-date">February 15, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Design <span>(12)</span></a></li>
+                        <li><a href="#">Development <span>(25)</span></a></li>
+                        <li><a href="#">UI/UX <span>(8)</span></a></li>
+                        <li><a href="#">Technology <span>(14)</span></a></li>
+                        <li><a href="#">Business <span>(9)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Widget -->
+                <div class="sidebar-widget newsletter-widget">
+                    <h3 class="widget-title">Newsletter</h3>
+                    <p>Subscribe to our newsletter and stay updated with the latest web development trends and tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Tags Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Popular Tags</h3>
+                    <div class="tag-cloud">
+                        <a href="#" class="tag">HTML5</a>
+                        <a href="#" class="tag">CSS3</a>
+                        <a href="#" class="tag">JavaScript</a>
+                        <a href="#" class="tag">Responsive</a>
+                        <a href="#" class="tag">Design</a>
+                        <a href="#" class="tag">UX</a>
+                        <a href="#" class="tag">Accessibility</a>
+                        <a href="#" class="tag">Mobile</a>
+                        <a href="#" class="tag">Web Performance</a>
+                        <a href="#" class="tag">Frontend</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+   
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <a href="#" class="footer-logo">Web<span>Wacos</span></a>
+                    <p>We create stunning, high-performing websites that help businesses succeed online.</p>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services-detail.html#web-design">Web Design</a></li>
+                        <li><a href="services-detail.html#web-development">Web Development</a></li>
+                        <li><a href="services-detail.html#ecommerce">E-Commerce</a></li>
+                        <li><a href="services-detail.html#seo-optimization">SEO Optimization</a></li>
+                        <li><a href="services-detail.html#maintenance">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="services-detail.html">Services</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                        <span>123 Business Avenue, Suite 500<br>New York, NY 10001</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone footer-contact-icon"></i>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope footer-contact-icon"></i>
+                        <span>info@webwacos.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 WebWacos. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Additional Blog Page Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Back to Top Button
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Smooth scrolling for TOC links
+            const tocLinks = document.querySelectorAll('.blog-toc a');
+            
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 120,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+               
